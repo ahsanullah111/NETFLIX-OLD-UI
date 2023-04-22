@@ -1,0 +1,678 @@
+/* --------FONT------ */
+
+
+@font-face {
+    font-family: 'Kinetika';
+    src: url('Kinetika-Heavy.eot');
+    src: local('Kinetika Heavy'), local('Kinetika-Heavy'),
+        url('Kinetika-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Kinetika-Heavy.woff2') format('woff2'),
+        url('Kinetika-Heavy.woff') format('woff'),
+        url('Kinetika-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Interfaces';
+    src: local('TT Interfaces Extra Bold'), local('TT-Interfaces-Extra-Bold'),
+        url('TTInterfaces-ExtraBold.woff2') format('woff2'),
+        url('TTInterfaces-ExtraBold.woff') format('woff'),
+        url('TTInterfaces-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* --------FONT--END---- */
+
+/* --------NAVBAR START---- */
+* {
+    overflow-x: hidden;
+}
+
+
+body {
+    background: #000;
+    color: #ffffff;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 90px;
+
+
+}
+
+.logo {
+    width: 145px;
+    cursor: pointer;
+}
+
+
+.signInBtn {
+    background: #db0001;
+    color: #fff;
+    border: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 4.5vh;
+}
+
+
+/* --------NAVBAR END---- */
+
+
+/* --------MAIN HEADER SECTION START------ */
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+
+.header-content h1 {
+    font-family: Kinetika-Heavy;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: -1%;
+    white-space: nowrap;
+
+}
+
+.header-content h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 170%;
+
+}
+
+
+p {
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+
+.email-content input {
+
+    border: 4;
+    border-radius: 0.20rem;
+    outline: 10%;
+    font-size: 1.1rem;
+    color: #ffffff;
+    outline-color: #ffffff;
+    background-color: rgba(24, 20, 20, 0.696);
+    width: 325px;
+    height: 50px;
+    border: 1px solid #b3b3b3;
+    padding-left: 3%;
+  
+
+}
+
+.email-content button {
+
+    border: 0;
+    border-radius: 0.20rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height: 55px;
+    font-size: 22px;
+    cursor: pointer;
+    left: 0.3%;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-bottom: 3px;
+ 
+
+
+}
+
+
+input::placeholder {
+    color: #b3b3b3;
+}
+
+button:hover {
+    background-color: #a90000;
+    color: white;
+    transition-duration: 250ms;
+}
+
+
+
+.btn_arrow img {
+    height: 34%;
+
+}
+
+.hr {
+    align-items: center;
+    width: auto;
+    height: 8px;
+
+    background: rgba(60, 53, 53, 0.696);
+    margin-bottom: 50px;
+}
+
+/* --------MAIN HEADER SECTION END------ */
+
+/*-------ALL-FEATURE-----------*/
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    padding: 10px 0px;
+    align-items: center;
+    margin: 20px 100px;
+
+}
+
+/*-------H1 TEXT-----------*/
+
+section div.text h1 {
+    font-family: Kinetika-Heavy;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: -2%;
+
+}
+
+/*-------PARAGRAPH-----------*/
+
+section div.text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+/*-------1ST MEDIA PHOTOS-----------*/
+
+.div-media-s1 img {
+    width: 500px;
+
+}
+
+/*-------2ND MEDIA PHOTOS-----------*/
+
+.div-media-s2 img {
+    width: 500px;
+}
+
+
+
+/*-------3RD MEDIA PHOTOS-----------*/
+
+.div-media-s3 img {
+    width: 500px;
+
+}
+
+
+/*-------4TH MEDIA PHOTOS-----------*/
+
+.div-media-s4 img {
+    width: 500px;
+}
+
+
+
+
+
+/*-------------------------------------FREQUENTLY ASKED QUESTIONS-------------------------------------*/
+
+
+
+
+#faq-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    font-family: TT Interfaces;
+    margin: 0px 48px;
+    margin-top: 140px;
+    padding-bottom: 12px;
+
+}
+
+
+#faq-BOX {
+    margin: 0px 48px;
+}
+
+details>summary {
+    list-style-type: none;
+}
+
+
+.faq-q {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 30px 30px;
+    margin-top: 9px;
+    background-color:#2B2B2B;
+    overflow: hidden;
+
+
+
+}
+
+.faq-q:hover {
+
+    background-color:#2B2B2B;
+    transition-duration: 250ms;
+}
+
+
+
+.faq-q {
+    position: relative;
+}
+
+.faq-q svg {
+    height: 36px;
+    width: 36px;
+    right: 10px;
+    align-items: center;
+    position: absolute;
+    padding-right: 13px;
+    /*-- transform:rotate(45deg);---*/
+}
+
+
+
+.faq-a {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    padding: 24px 24px;
+    margin-top: 1.9px;
+    background-color:#2B2B2B;
+
+}
+
+details[open] summary~* {
+    animation: sweep .2s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px
+    }
+}
+
+
+/*------FREQUENTLY ASKED QUESTIONS END------------*/
+
+
+#P-1 {
+    margin-left: 4%;
+    font-size: 20px;
+}
+
+
+.email-content-bottom {
+    margin: -3% 0 0 4%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*---------FOOTER-LINKS---------*/
+
+
+#FOOTER-MAIN-LINK {
+    position: absolute;
+    margin: 120px 0px 0px 49px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.link-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 170px;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+.link-footer li {
+    padding: 8px;
+
+}
+
+.LINK-FONT-COLOR {
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+/*-----links end------*/
+
+
+/*-----Lang-Button-start----*/
+
+#div-body {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    outline-color: #ffffff;
+    background-color: rgba(24, 20, 20, 0.696);
+    border-radius: 0.20rem;
+    padding: 6px;
+    margin: 0px 55px;
+    margin-right: 1079px;
+    margin-top: 12px;
+    border: 1px solid #b3b3b3;
+}
+
+
+
+#div-bodyimg1 {
+    width: 18px;
+    height: 18px;
+    margin-left: 4px;
+
+    color: black;
+    margin-top: 1px;
+
+}
+
+#language-select {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    margin-top: 1px;
+    margin-right: 2px;
+    margin-left: 8px;
+    appearance: none;
+    color: #fff;
+}
+
+#divbodyimg2 {
+    width: 10px;
+    height: 5px;
+    margin-left: -1px;
+    margin-top: 2px;
+}
+
+/*----lang-button-END----*/
+
+#P-2 {
+    margin-left: 45px;
+
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+
+
+
+}
+
+#P-3 {
+
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    ;
+    text-align: right;
+    margin-left: 835px;
+    text-align: left;
+}
+
+
+#credits {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    
+}
+
+.copyright{
+ 
+    margin-left: 45px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+  
+}
+
+
+
+/* -------------MEDIA QUERIES --------*/
+
+@media only screen and (max-width: 600px){ 
+
+    section{
+        display: flex;
+        flex-flow: column wrap !important;
+        
+    }
+
+    .link-footer{
+        display: flex;
+        flex-flow: column wrap !important;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px 14px;
+    }
+
+
+    .logo {
+        height: 26px;
+        width: 100px;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-right: 25px ;
+
+    }
+
+    
+
+    section {
+        padding: 10px 0px;
+        align-items: center;
+        margin: 20px 0px;
+    
+    }
+
+    section div.text p {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 2px 60px;
+        text-align: center;
+        margin: 2px;
+        margin-left: -10px;
+    
+    
+    }
+
+    section div.text h1 {
+        font-family: Kinetika-Heavy;
+        font-size: 1.7rem;
+        font-weight: 900;
+        padding: 2px 40px;
+        padding-left: 2;
+       text-align: center;
+  
+        margin: 5px 10px;
+    }
+
+
+    .div-media-s1 img {
+        width: 350px;
+    
+    }
+
+    .div-media-s2 img {
+        width: 350px;
+    
+    }
+    .div-media-s3 img {
+        width: 350px;
+    
+    }
+    .div-media-s4 img {
+        width: 350px;
+    
+    }
+
+
+
+
+.header-content h3 {
+    font-size: 20px;
+
+}
+.email-content button{
+        margin-top: 10px;
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+        border-radius: 5px;
+ 
+    }
+   
+.email-content input {
+     width: 280px;
+    height: 50px;
+    padding-left: 3%;
+
+}
+.header-content h1{
+    margin-top: 200px;
+    
+}
+
+    .header {
+        height: 70vh;
+    }
+ 
+ #header-main-text{
+  font-size: 130%;
+  margin-right: 10PX;
+
+
+}  
+
+
+
+#faq-header{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+
+.faq-q {
+    padding: 10px 10px;
+    margin: 2px 10px;
+    font-size: 20px;
+}
+
+.faq-q svg {
+    height: 24px;
+    width: 24px;
+}
+
+#faq-BOX {
+    margin: 0px 5px;
+}
+
+.faq-a{
+    padding: 10px 10px;
+    margin: 2px 10px;
+    font-size: 20px;
+}
+
+#signin-btn2{
+margin-left: 95px;
+padding: 7px;
+}
+
+#div-body{
+    width: 100px;
+}
+
+
+    #P-2 {
+      margin-left: 15px;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+
+    }
+    
+    #P-3 {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: left;
+      margin-left: 15px;
+    }
+    
+    #credits {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 30px;
+      align-items: flex-start;
+      
+    }
+
+    #P-1{
+        text-align: center;
+    }
+
+    #email-content-input2{
+        margin-left: 28px;
+    }
+
+
+}
